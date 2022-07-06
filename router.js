@@ -37,7 +37,7 @@ router.get("/logout", (req, res) => {
       res.send("Error");
     } else {
       res.render("base", {
-        title: "Express",
+        title: "G4L Login System",
         logout: "Logout Successfully...!",
       });
     }
