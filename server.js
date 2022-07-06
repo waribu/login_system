@@ -8,6 +8,7 @@ app.set("view engine", "ejs");
 
 //load static assets
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public/assets")));
 //home route
 app.get("/", (req, res) => {
   res.render("base", { title: "Login System" });
